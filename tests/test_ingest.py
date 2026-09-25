@@ -6,6 +6,7 @@ containment, key-aware views, BOM/CRLF handling, hostile inputs,
 and integration with real repository data (offline).
 """
 import pytest
+import os
 
 from hubcore import (
     IngestError,
@@ -251,6 +252,9 @@ class TestRepoIntegration:
         "Config/trojan.txt", "Config/hysteria2.txt", "Config/socks.txt",
     ]
 
+    @pytest.mark.skipif(
+        not any(os.path.isfile(p) for p in ["Config/vless.txt", "Config/vmess.txt"]),
+        reason="optional legacy Config/*.txt files missing")
     def test_ingest_real_config_files(self):
         ing = make_ingestor()
         results = []

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-25T07:00:00Z",
+  "pipeline_run_id": "sample-run-001",
+  "stats": {
+    "last_update": "2026-09-25T07:00:00Z",
+    "tested": 3,
+    "alive": 2,
+    "published": 2,
+    "countries": ["CA", "DE"],
+    "protocols": ["VLESS", "VMESS"]
+  },
+  "nodes": [
+    {
+      "origin": "guard1",
+      "line_no": 1,
+      "protocol": "VLESS",
+      "transport": "TCP",
+      "host": "example.com",
+      "port": 443,
+      "geo": {"country": "Canada", "city": "Toronto", "code": "CA"},
+      "ping_ms": 42.5,
+      "jitter_ms": 3.2,
+      "arch": "x86_64",
+      "status": "ok",
+      "rank": 1,
+      "line_hash": "a1b2c3d4"
+    },
+    {
+      "origin": "guard1",
+      "line_no": 2,
+      "protocol": "VMESS",
+      "transport": "WS",
+      "host": "example2.com",
+      "port": 443,
+      "geo": {"country": "Germany", "city": "Berlin", "code": "DE"},
+      "ping_ms": 55.0,
+      "jitter_ms": 4.1,
+      "arch": "arm64",
+      "status": "ok",
+      "rank": 2,
+      "line_hash": "e5f6g7h8"
+    }
+  ],
+  "groups": {
+    "country": {
+      "CA": ["a1b2c3d4"],
+      "DE": ["e5f6g7h8"]
+    },
+    "protocol": {
+      "VLESS": ["a1b2c3d4"],
+      "VMESS": ["e5f6g7h8"]
+    },
+    "transport": {
+      "TCP": ["a1b2c3d4"],
+      "WS": ["e5f6g7h8"]
+    },
+    "ping_tier": {
+      "ultra_fast": ["a1b2c3d4"],
+      "good": ["e5f6g7h8"]
+    }
+  }
+}

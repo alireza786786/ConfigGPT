@@ -1,0 +1,4 @@
+vless://a1b2c3d4@example.com:443?security=tls&type=tcp#👉🆔@Goodbaye_filtering📡CA®️Canada©️Toronto🅿️ping:42.5ms~±3.2ms⚡️x86_64
+
+vless://e5f6g7h8@example2.com:443?security=tls&type=tcp#👉🆔@Goodbaye_filtering📡DE®️Germany©️Berlin🅿️ping:55.0ms~±4.1ms⚡️arm64
+

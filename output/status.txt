@@ -1,0 +1,6 @@
+Last update: 2026-09-25T07:00:00Z
+Tested count: 3
+Alive count: 2
+Published count: 2
+Countries: 2 (CA, DE)
+Protocols: 2 (VLESS, VMESS)
